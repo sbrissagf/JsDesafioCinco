@@ -45,13 +45,6 @@ class Gaseosa {
 
 }
 
-/* const pepsi = new Gaseosa("Pepsi", "Cola", "1.5l", 250, "cerrada");
-
-console.log(pepsi);
-
-pepsi.abrirCerrar();
-
-console.log(pepsi); */
 
 const fanta = new Gaseosa({
     marca: "fanta",
