@@ -9,7 +9,7 @@ class Gaseosa {
 
     }
 
-    abrirCerrar = () => {
+    abrirCerrar() {
         if (this.estado == "cerrado") {
             this.estado = "abierta";
 
@@ -19,12 +19,12 @@ class Gaseosa {
         }
     }
 
-    agregarIVA = () => {
+    agregarIVA() {
 
         this.precio = (this.precio * 0.21) + this.precio;
     }
 
-    venderGaseosa = (cantidad) => {
+    venderGaseosa(cantidad) {
 
 
         if (cantidad <= this.stock) {
@@ -38,7 +38,7 @@ class Gaseosa {
         }
     }
 
-    enOferta = (descuento) => {
+    enOferta(descuento) {
 
         this.precio = this.precio - (this.precio * descuento)
     }
@@ -57,8 +57,10 @@ const fanta = new Gaseosa({
 
 const compraUsuario = parseInt(prompt("Cuántas fantas desea?"));
 
-fanta.comprarGaseosa(compraUsuario);
 fanta.agregarIVA();
+
+fanta.venderGaseosa(compraUsuario);
+
 fanta.enOferta(0.5);
 
 console.log(fanta);
