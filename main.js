@@ -1,3 +1,7 @@
+const gaseosa = ['cola', 'sprite', 'fanta', 'gatorade'];
+gaseosa.push('pritty');
+console.log(gaseosa);
+
 class Gaseosa {
     constructor(gaseosa) {
         this.marca = gaseosa.marca;
